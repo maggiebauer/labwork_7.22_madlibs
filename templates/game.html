@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>MadLibs!</title>
+</head>
+<body>
+
+<h1>Let's play some madlibs!</h1>
+<h3>In this game, you will chose a person, a color, a noun, and an adjective from the selected options. Then press "Let's Play!"</h3>
+
+	<form action="/madlib" method="GET">
+		Enter a name:<br>
+		<input type="text" name="mad_player">
+		<br>
+		<br>
+
+		Select a color:<br>
+		<select name="color">
+			<option value="" selected disabled hidden>Select One</option>
+			<option value="red">red</option>
+			<option value="blue">blue</option>
+			<option value="green">green</option>
+			<option value="purple">purple</option>
+		</select>
+		<br>
+		<br>
+
+		Enter a noun:<br>
+		(Noun is a person, place, or thing...etc)<br>
+		<input type="text" name="noun">
+		<br>
+		<br>
+
+
+		Enter an adjective:<br>
+		(Adjectives are words or phrases naming an attribute, basically a descriptor word)<br>
+		<input type="text" name="adjective">
+		<br>
+		<br>		
+
+		<button type="submit">Lets Play!</button>
+
+</form>
+
+</body>
+</html>
